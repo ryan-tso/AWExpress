@@ -10,7 +10,7 @@ import pymysql as pymysql
 # 2 - Valided Shipping Info
 # 3 - Completed
 # 4 - Cancelled
-rds_host  = "marketplacedb.c4h5s89ot7ec.us-east-1.rds.amazonaws.com"
+rds_host = rds_config.rds_host
 
 name = rds_config.db_username
 password = rds_config.db_password

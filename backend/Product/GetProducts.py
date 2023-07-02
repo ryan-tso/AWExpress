@@ -6,7 +6,7 @@ import rds_config as rds_config
 import pymysql as pymysql
 import math
 #rds settings
-rds_host = "marketplacedb.c4h5s89ot7ec.us-east-1.rds.amazonaws.com"
+rds_host = rds_config.rds_host
 name = rds_config.db_username
 password = rds_config.db_password
 db_name = rds_config.db_name
@@ -21,7 +21,7 @@ CATEGORY_LIST = {
     5:"Supplements",
     6:"Drugs",
     7:"Drinks and Food",
-    8:"Pets Good",
+    8:"Pet Goods",
     9:"Others"
 }
 logger = logging.getLogger()

@@ -28,7 +28,7 @@ export default function PendingOrder (props) {
 
   const [items, setItems] = useState(props.items)
 
-  const address = JSON.parse(items[0].shipAddress);
+  const address = items[0].shipAddress;
 
   const PRODUCT_DETAILS_SIZE = '120px'
   const ADDRESS_DETAILS_SIZE = '90px'

@@ -326,35 +326,40 @@ export default function Checkout() {
               },
             }
           )
+          // .then((response) => {
+          //   // dispatch(updateAllAmounts(user.userId, session.id_token))
+          //   console.log(response.data['orderId']);
+          //   axios
+          //     .post(
+          //       `/api/shipping`,
+          //       {
+          //         input: `{\"orderId\": ${response.data['orderId']}}`,
+          //         stateMachineArn:
+          //           'arn:aws:states:us-east-1:382691565928:stateMachine:ShippingStateMachine',
+          //       },
+          //       {
+          //         headers: {
+          //           'Content-Type': 'application/json',
+          //           authorization: session.id_token,
+          //         },
+          //       }
+          //     )
+          //     .then((response) => {
+          //       console.log(response);
+          //       setLoading(false);
+          //       Router.push('/payconfirm');
+          //     })
+          //     .catch((error) => {
+          //       setLoading(false);
+          //       console.log(error);
+          //       setServerError(true)
+          //       // setPaymentError('Error: Shipping Function');
+          //     });
+          // })
           .then((response) => {
-            // dispatch(updateAllAmounts(user.userId, session.id_token))
-            console.log(response.data['orderId']);
-            axios
-              .post(
-                `/api/shipping`,
-                {
-                  input: `{\"orderId\": ${response.data['orderId']}}`,
-                  stateMachineArn:
-                    'arn:aws:states:us-east-1:382691565928:stateMachine:ShippingStateMachine',
-                },
-                {
-                  headers: {
-                    'Content-Type': 'application/json',
-                    authorization: session.id_token,
-                  },
-                }
-              )
-              .then((response) => {
-                console.log(response);
-                setLoading(false);
-                Router.push('/payconfirm');
-              })
-              .catch((error) => {
-                setLoading(false);
-                console.log(error);
-                setServerError(true)
-                // setPaymentError('Error: Shipping Function');
-              });
+            console.log(response);
+            setLoading(false);
+            Router.push('/payconfirm');
           })
           .catch((error) => {
             setLoading(false);

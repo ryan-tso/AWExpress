@@ -5,9 +5,9 @@ import random
 import string
 import logging
 
-ACCESS_KEY = 'AKIAVSGRR4FUP5NKERNH'
-SECRET_KEY = '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'
-BUCKET = "aws.image"
+ACCESS_KEY = 'AKIAWQ236ZAC2DGBOC5T'
+SECRET_KEY = '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'
+BUCKET = "aws-images2"
 def lambda_handler(event, context):
     print(f"event is {event}")
     resObj = {}

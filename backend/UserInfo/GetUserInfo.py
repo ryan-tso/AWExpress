@@ -5,7 +5,7 @@ import logging
 import rds_config as rds_config
 import pymysql as pymysql
 #rds settings
-rds_host  = "marketplacedb.c4h5s89ot7ec.us-east-1.rds.amazonaws.com"
+rds_host = rds_config.rds_host
 name = rds_config.db_username
 password = rds_config.db_password
 db_name = rds_config.db_name
@@ -67,7 +67,13 @@ def lambda_handler(event, context):
                 resbody['address']=None
 
             resbody['payment'] = row[4]
-            resbody['deposit'] = json.loads(row[5])
+
+            if row[5] is not None:
+                resdeposit = row[5].strip('\"')
+                resbody['deposit'] = json.loads(resdeposit)
+            else:
+                resbody['deposit']=None
+
             resbody['department'] = row[6]
             resObj['statusCode'] = 200
     conn.commit()

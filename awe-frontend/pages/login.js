@@ -86,7 +86,7 @@ export default function Login() {
               }}>
               AW
             </Typography>
-            <Typography variant='h1' color={theme.palette.background.main} 
+            <Typography variant='h1' color={theme.palette.background.default}
               sx={{
                 mb: '2%', 
                 fontSize: 100,

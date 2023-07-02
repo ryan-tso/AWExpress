@@ -5,7 +5,7 @@ import logging
 import rds_config as rds_config
 import pymysql as pymysql
 #rds settings
-rds_host  = "marketplacedb.c4h5s89ot7ec.us-east-1.rds.amazonaws.com"
+rds_host = rds_config.rds_host
 name = rds_config.db_username
 password = rds_config.db_password
 db_name = rds_config.db_name
@@ -110,7 +110,7 @@ def lambda_handler(event, context):
                 'firstname':firstname,
                 'lastname':lastname,
                 'department':department,
-                'address':json.loads(address)
+                'address':address
             }
     conn.commit()
 

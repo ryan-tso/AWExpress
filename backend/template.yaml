@@ -17,7 +17,7 @@ Resources:
     Properties:
       CodeUri: UserInfo/
       Handler: GetUserInfo.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -33,7 +33,7 @@ Resources:
     Properties:
       CodeUri: UserInfo/
       Handler: GetUserSellOrder.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -49,7 +49,7 @@ Resources:
     Properties:
       CodeUri: UserInfo/
       Handler: GetUserByEmail.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -65,7 +65,7 @@ Resources:
     Properties:
       CodeUri: UserInfo/
       Handler: GetSellerInfo.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -81,7 +81,7 @@ Resources:
     Properties:
       CodeUri: Products/
       Handler: GetListedProducts.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -97,7 +97,7 @@ Resources:
     Properties:
       CodeUri: Products/
       Handler: GetProductsStatistics.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
         - x86_64
       Events:
@@ -113,7 +113,7 @@ Resources:
     Properties:
       CodeUri: UserLogin/
       Handler: UserLogin.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -130,7 +130,7 @@ Resources:
     Properties:
       CodeUri: UserInfo/
       Handler: UpdateUserInfo.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -146,7 +146,7 @@ Resources:
     Properties:
       CodeUri: UserInfo/
       Handler: UpdateDeposit.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -162,7 +162,7 @@ Resources:
     Properties:
       CodeUri: OrderHistory/
       Handler: GetOrderHistory.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -178,7 +178,7 @@ Resources:
     Properties:
       CodeUri: Order/
       Handler: GetOrderStatus.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -194,7 +194,7 @@ Resources:
     Properties:
       CodeUri: CartItem/
       Handler: GetCartItem.get_cart_item
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
         - x86_64
       Events:
@@ -211,7 +211,7 @@ Resources:
     Properties:
       CodeUri: CartItem/
       Handler: PostCartItem.post_cart_item
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
         - x86_64
       Events:
@@ -228,7 +228,7 @@ Resources:
     Properties:
       CodeUri: CartItem/
       Handler: DeleteCartItem.delete_cart_item
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
         - x86_64
       Events:
@@ -245,7 +245,7 @@ Resources:
     Properties:
       CodeUri: CartItem/
       Handler: PatchCartItem.patch_cart_item
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
         - x86_64
       Events:
@@ -261,7 +261,7 @@ Resources:
     Properties:
       CodeUri: Payment/
       Handler: ConfirmPayment.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -278,7 +278,7 @@ Resources:
     Properties:
       CodeUri: Order/
       Handler: OrderShipInfoValidate.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -294,7 +294,7 @@ Resources:
     Properties:
       CodeUri: Admin/
       Handler: AdminPromote.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -311,7 +311,7 @@ Resources:
     Properties:
       CodeUri: Admin/
       Handler: AdminDemote.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -327,7 +327,7 @@ Resources:
     Properties:
       CodeUri: Admin/
       Handler: AdminDelete.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -343,7 +343,7 @@ Resources:
     Properties:
       CodeUri: Admin/
       Handler: AdminDeletePost.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
         - x86_64
       Events:
@@ -359,7 +359,7 @@ Resources:
     Properties:
       CodeUri: Admin/
       Handler: AdminCancelOrder.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
         - x86_64
       Events:
@@ -375,7 +375,7 @@ Resources:
     Properties:
       CodeUri: Product/
       Handler: AddProducts.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -391,7 +391,7 @@ Resources:
     Properties:
       CodeUri: Product/
       Handler: GetProducts.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -407,7 +407,7 @@ Resources:
     Properties:
       CodeUri: Product/
       Handler: RemoveProduct.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -423,7 +423,7 @@ Resources:
     Properties:
       CodeUri: Shipping/
       Handler: InitiateShipping.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -439,7 +439,7 @@ Resources:
     Properties:
       CodeUri: Shipping/
       Handler: Shipout.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -455,7 +455,7 @@ Resources:
     Properties:
       CodeUri: Shipping/
       Handler: ShippingDelivered.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -471,7 +471,7 @@ Resources:
     Properties:
       CodeUri: Order/
       Handler: CancelOrder.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
       - x86_64
       Events:
@@ -487,7 +487,7 @@ Resources:
     Properties:
       CodeUri: Product/
       Handler: GetDepartmentProduct.lambda_handler
-      Runtime: python3.8
+      Runtime: python3.9
       Architectures:
         - x86_64
       Events:

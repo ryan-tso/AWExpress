@@ -1,3 +1,5 @@
+backend
 backend/.aws-sam
 backend/.DS_Store
 .idea
+awe-frontend/.env

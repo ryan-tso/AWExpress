@@ -18,7 +18,7 @@ import pymysql as pymysql
 # Product status code:
 # 1 - active
 # 2 - inactive
-rds_host  = "marketplacedb.c4h5s89ot7ec.us-east-1.rds.amazonaws.com"
+rds_host = rds_config.rds_host
 
 name = rds_config.db_username
 password = rds_config.db_password

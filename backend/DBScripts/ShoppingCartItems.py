@@ -3,11 +3,12 @@ import random
 
 # Establish a connection to the MySQL database
 conn = pymysql.connect(
-    host='marketplacedb.c4h5s89ot7ec.us-east-1.rds.amazonaws.com',
-    user='dev-user1',
-    password='dev-user1',
-    db='aws'
+    host='awexpress.c2paxsixb8hv.us-east-1.rds.amazonaws.com',
+    user='admin',
+    password='Ricearoni1!',
+    db='AWExpress'
 )
+
 # ShoppingCartItem data to be inserted
 
 # Restriction satisfied with (Products.py, Posts.py, Orders.py)
